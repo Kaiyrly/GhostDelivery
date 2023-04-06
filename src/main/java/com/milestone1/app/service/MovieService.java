@@ -25,7 +25,7 @@ public class MovieService {
         return movieRepository.findAll();
     }
 
-    public Movie getMovieByMovieId(int movieId) {
+    public Movie getMovieByMovieId(Integer movieId) {
         return movieRepository.findByMovieId(movieId);
     }
 

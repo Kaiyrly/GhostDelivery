@@ -51,10 +51,13 @@ public class UserController {
         if(existingUser == null) {
             throw new CustomException("Invalid userId. Such user does not exist.");
         }
-        
         if (existingUser != null) {
             user.setId(existingUser.getId()); // Preserve the existing ID
+            user.setUserId(userId);
+            userRepository.save(user);
         }
+
+        
         return ResponseEntity.ok(user);
     }
 }

@@ -31,7 +31,7 @@ public class MovieController {
     }
 
     @GetMapping("/{movieId}")
-    public Movie getMovieByMovieId(@PathVariable int movieId) {
+    public Movie getMovieByMovieId(@PathVariable Integer movieId) {
         Movie movie = movieRepository.findByMovieId(movieId);
         if(movie == null) {
             throw new CustomException("Invalid movieId. Such movie does not exist.");

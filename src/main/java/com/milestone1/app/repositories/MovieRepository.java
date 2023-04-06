@@ -12,6 +12,6 @@ public interface MovieRepository extends MongoRepository<Movie, String> {
     @Query("{ 'averageRating': { $gte: ?0 } }")
     List<Movie> findByRating(double minRating);
 
-    Movie findByMovieId(int movieId);
+    Movie findByMovieId(Integer movieId);
 
 }

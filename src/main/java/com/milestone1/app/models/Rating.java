@@ -10,24 +10,24 @@ import lombok.Data;
 public class Rating {
     @Id
     private String id;
-    private String userId;
-    private String movieId;
+    private Integer userId;
+    private Integer movieId;
     private Integer rating;
     private Long timestamp;
 
-    public String getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 
-    public String getMovieId() {
+    public Integer getMovieId() {
         return movieId;
     }
 
-    public void setMovieId(String movieId) {
+    public void setMovieId(Integer movieId) {
         this.movieId = movieId;
     }
 

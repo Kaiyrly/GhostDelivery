@@ -10,7 +10,7 @@ import lombok.Data;
 public class User {
     @Id
     private String id;
-    private String userId;
+    private Integer userId;
     private String gender;
     private Integer age;
     private Integer occupation;
@@ -24,11 +24,11 @@ public class User {
         this.id = id;
     }
 
-    public String getUserId() {
+    public Integer getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(Integer userId) {
         this.userId = userId;
     }
 

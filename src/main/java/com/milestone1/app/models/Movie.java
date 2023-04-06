@@ -10,16 +10,16 @@ import lombok.Data;
 public class Movie {
     @Id
     private String id;
-    private String movieId;
+    private Integer movieId;
     private String title;
     private String genres;
     private double averageRating;
 
-    public String getMovieId() {
+    public Integer getMovieId() {
         return movieId;
     }
 
-    public void setMovieId(String movieId) {
+    public void setMovieId(Integer movieId) {
         this.movieId = movieId;
     }
 
