@@ -41,7 +41,6 @@ public class UserController {
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {
         List<User> maxUser = userRepository.findMaxUserId();
-        System.out.println(maxUser);
 
         Integer maxUserId = maxUser.get(0).getUserId();
         if (maxUserId == null) {
