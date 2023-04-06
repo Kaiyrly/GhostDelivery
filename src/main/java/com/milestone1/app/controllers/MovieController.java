@@ -41,6 +41,9 @@ public class MovieController {
 
     @PostMapping
     public ResponseEntity<Movie> addMovie(@RequestBody Movie movie) {
+        List<Movie> movies = movieRepository.findMaxMovieId();
+        Integer maxMovieId = movies.get(0).getMovieId();
+        movie.setMovieId(maxMovieId + 1);
         Movie savedMovie = movieRepository.save(movie);
         return ResponseEntity.ok(savedMovie);
     }

@@ -1,7 +1,10 @@
 package com.milestone1.app.repositories;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
+
+import java.util.Optional;
 import org.springframework.data.mongodb.repository.Query;
+import org.springframework.stereotype.Repository;
 
 import com.milestone1.app.models.Movie;
 
@@ -13,5 +16,8 @@ public interface MovieRepository extends MongoRepository<Movie, String> {
     List<Movie> findByRating(double minRating);
 
     Movie findByMovieId(Integer movieId);
+
+    @Query(value = "{}", sort = "{movieId : -1}")
+    List<Movie> findMaxMovieId();
 
 }

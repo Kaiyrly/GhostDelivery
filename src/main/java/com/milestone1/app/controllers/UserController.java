@@ -40,6 +40,14 @@ public class UserController {
 
     @PostMapping
     public ResponseEntity<User> createUser(@RequestBody User user) {
+        List<User> maxUser = userRepository.findMaxUserId();
+        System.out.println(maxUser);
+
+        Integer maxUserId = maxUser.get(0).getUserId();
+        if (maxUserId == null) {
+            maxUserId = 0;
+        }
+        user.setUserId(maxUserId + 1);
         userRepository.save(user);
         return ResponseEntity.ok(user);
     }
