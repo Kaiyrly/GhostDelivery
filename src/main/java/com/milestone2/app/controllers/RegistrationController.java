@@ -37,6 +37,10 @@ public class RegistrationController {
         if (existingUser != null) {
             return new ResponseEntity<>(HttpStatus.CONFLICT); 
         }
+        User existingUseremail = userRepository.findByUsername(user.getEmail());
+        if (existingUseremail != null) {
+            return new ResponseEntity<>(HttpStatus.CONFLICT); 
+        }
 
         // Encode password and save user
         user.setPassword(passwordEncoder.encode(user.getPassword()));

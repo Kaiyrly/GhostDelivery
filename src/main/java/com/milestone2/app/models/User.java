@@ -12,6 +12,7 @@ public class User {
     private String userId;
     private String username;
     private String password;
+    private String email;
     private Double rating;
 
     public String getId() {
@@ -38,6 +39,14 @@ public class User {
         this.rating = rating;
     }
 
-    
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
 
 }

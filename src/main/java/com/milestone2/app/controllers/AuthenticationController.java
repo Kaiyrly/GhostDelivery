@@ -12,9 +12,15 @@ import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.milestone2.app.models.ChangePasswordRequest;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.PatchMapping;
 
 @RestController
 @RequestMapping("/auth")
@@ -43,5 +49,26 @@ public class AuthenticationController {
         final String jwt = jwtUtil.generateToken(userDetails);
 
         return ResponseEntity.ok(new AuthenticationResponse(jwt));
+    }
+
+    @PostMapping("/change-password")
+    public ResponseEntity<String> changePassword(@RequestBody ChangePasswordRequest changePasswordRequest) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        String currentUsername = authentication.getName();
+
+        // Authenticate the user with the current password
+        authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(currentUsername, changePasswordRequest.getCurrentPassword())
+        );
+
+
+        // Get the current user details
+        CustomUserDetails currentUser = (CustomUserDetails) userDetailsService.loadUserByUsername(currentUsername);
+
+
+        // Update the user's password
+        userDetailsService.changePassword(currentUser, changePasswordRequest.getNewPassword());
+
+        return ResponseEntity.ok("Password changed successfully");
     }
 }

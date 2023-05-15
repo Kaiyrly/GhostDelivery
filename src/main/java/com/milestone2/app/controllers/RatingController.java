@@ -42,11 +42,6 @@ public class RatingController {
             @PathVariable String userId,
             Authentication authentication
     ) {
-        LOGGER.info("Received GET request to retrieve rating for user with ID: {}", userId);
-
-        // Check if the authenticated user is authorized to access the requested user's rating
-        // Implement your authorization logic here, e.g., checking user roles or ownership
-
         // Retrieve the user to get the rating
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new IllegalArgumentException("User not found"));
