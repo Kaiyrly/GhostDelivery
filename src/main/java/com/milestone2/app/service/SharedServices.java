@@ -11,6 +11,14 @@ public class SharedServices {
     @Autowired
     private UserRepository userRepository;
 
+    public void setUserRepository(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public void setPasswordEncoder(PasswordEncoder passwordEncoder) {
+        this.passwordEncoder = passwordEncoder;
+    }
+
     @Autowired
     private PasswordEncoder passwordEncoder;
 

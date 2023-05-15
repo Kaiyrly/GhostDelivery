@@ -98,5 +98,9 @@ public class Order {
     public void setComments(String comments) {
         this.comments = comments;
     }
-    
+
+    public void removeItem(String item) {
+        itemQuantities.remove(item);
+    }
+
 }
