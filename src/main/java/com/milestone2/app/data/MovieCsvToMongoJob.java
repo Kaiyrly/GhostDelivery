@@ -1,3 +1,4 @@
+package com.milestone2.app.data;
 // package com.milestone1.app.data;
 
 // import org.springframework.batch.core.Job;
@@ -17,11 +18,10 @@
 // import org.springframework.core.io.ClassPathResource;
 // import org.springframework.data.mongodb.core.MongoTemplate;
 
-// import com.milestone1.app.models.Rating;
-
+// import com.milestone1.app.models.Movie;
 // @EnableBatchProcessing
 // @Configuration
-// public class RatingCsvToMongoJob {
+// public class MovieCsvToMongoJob {
 
 //     @Autowired
 //     private JobBuilderFactory jobBuilderFactory;
@@ -32,39 +32,39 @@
 //     private MongoTemplate mongoTemplate;
 
 //     @Bean
-//     public Job readRatingCSVFile() {
-//         return jobBuilderFactory.get("readRatingCSVFile").incrementer(new RunIdIncrementer()).start(ratingStep())
+//     public Job readMovieCSVFile() {
+//         return jobBuilderFactory.get("readMovieCSVFile").incrementer(new RunIdIncrementer()).start(movieStep())
 //                 .build();
 //     }
 
 //     @Bean
-//     public Step ratingStep() {
-//         return stepBuilderFactory.get("ratingStep").<Rating, Rating>chunk(10).reader(ratingReader())
-//                 .writer(ratingWriter()).build();
+//     public Step movieStep() {
+//         return stepBuilderFactory.get("movieStep").<Movie, Movie>chunk(10).reader(movieReader())
+//                 .writer(movieWriter()).build();
 //     }
 
 //     @Bean
-//     public FlatFileItemReader<Rating> ratingReader() {
-//         FlatFileItemReader<Rating> reader = new FlatFileItemReader<Rating>();
-//         reader.setResource(new ClassPathResource("ml-1m/ratings.csv"));
+//     public FlatFileItemReader<Movie> movieReader() {
+//         FlatFileItemReader<Movie> reader = new FlatFileItemReader<>();
+//         reader.setResource(new ClassPathResource("ml-1m/movies.csv"));
 //         reader.setLinesToSkip(1); // skip the header row
-//         reader.setLineMapper(new DefaultLineMapper<Rating>() {{
+//         reader.setLineMapper(new DefaultLineMapper<Movie>() {{
 //             setLineTokenizer(new DelimitedLineTokenizer() {{
-//                 setNames("userId", "movieId", "rating", "timestamp");
+//                 setNames("movieId", "title", "genres");
 //                 setDelimiter(","); // set the delimiter used in the CSV file
 //             }});
-//             setFieldSetMapper(new BeanWrapperFieldSetMapper<Rating>() {{
-//                 setTargetType(Rating.class);
+//             setFieldSetMapper(new BeanWrapperFieldSetMapper<Movie>() {{
+//                 setTargetType(Movie.class);
 //             }});
 //         }});
 //         return reader;
 //     }
 
 //     @Bean
-//     public MongoItemWriter<Rating> ratingWriter() {
-//         MongoItemWriter<Rating> writer = new MongoItemWriter<>();
+//     public MongoItemWriter<Movie> movieWriter() {
+//         MongoItemWriter<Movie> writer = new MongoItemWriter<>();
 //         writer.setTemplate(mongoTemplate);
-//         writer.setCollection("ratings");
+//         writer.setCollection("movies");
 //         return writer;
 //     }
 // }

@@ -1,4 +1,4 @@
-package com.milestone1.app.exception;
+package com.milestone2.app.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
