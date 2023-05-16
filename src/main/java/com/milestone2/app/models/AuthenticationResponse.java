@@ -17,4 +17,8 @@ public class AuthenticationResponse {
     public void setJwt(String jwt) {
         this.jwt = jwt;
     }
+
+    public String getToken() {
+        return null;
+    }
 }
