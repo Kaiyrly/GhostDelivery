@@ -72,10 +72,10 @@ export const Login = ({token, setToken}) => {
               margin="normal"
               required
               fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
+              id="username"
+              label="username"
+              name="username"
+              autoComplete="username"
               autoFocus
               onChange = {event => setUsername(event.target.value)}
             />
