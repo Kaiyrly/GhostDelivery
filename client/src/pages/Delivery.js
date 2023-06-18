@@ -78,11 +78,12 @@ const DeliveryPage = () => {
               variant="contained" 
               color="primary" 
               onClick={() => handleTakeOrder(order)}
-              disabled={userRating < 3}
+              disabled={userRating < 3 || order.userId === getUserIdFromToken(token)}
             >
               Take Order
             </Button>
             {userRating < 3 && <Typography variant="body2" color="error">Your rating is too low, you cannot take orders</Typography>}
+            {order.userId === getUserIdFromToken(token) && <Typography variant="body2" color="error">This is your order, you can not take your own order</Typography>}
           </CardContent>
         </OrderCard>
       ))}
