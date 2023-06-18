@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080';
+const API_URL = 'http://localhost:8080/app-0.0.1-SNAPSHOT';
 const API = axios.create({
   baseURL: API_URL,
 });
