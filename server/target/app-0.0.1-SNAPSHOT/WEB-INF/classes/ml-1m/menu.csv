@@ -1,0 +1,193 @@
+restaurant,item,price
+Gimbap Chonguk,Paradise Gimbab,2000
+Gimbap Chonguk,Kimchi Gimbab,2500
+Gimbap Chonguk,Cheese Gimbap,2500
+Gimbap Chonguk,Tuna Gimbap,3000
+Gimbap Chonguk,Chily Gimbap,3000
+Gimbap Chonguk,Beef Gimbap,3000
+Gimbap Chonguk,Deep Fried pork Gimbap,3000
+Gimbap Chonguk,Pork Gimbap,3000
+Gimbap Chonguk,Shrimp Gimbap,3500
+Gimbap Chonguk,Ramen,2500
+Gimbap Chonguk,Egg Ramen,3000
+Gimbap Chonguk,Kimchi Ramen,3000
+Gimbap Chonguk,Rice cake Ramen,3500
+Gimbap Chonguk,Cheese Ramen,3500
+Gimbap Chonguk,Pork dumpling Ramen,3500
+Gimbap Chonguk,Hangover Ramen,4000
+Gimbap Chonguk,Spicy seafood Ramen,4000
+Gimbap Chonguk,Rice cake with spicy red sauce,3000
+Gimbap Chonguk,Rice cake Ramen spicy sauce,3500
+Gimbap Chonguk,Spicy stir-fried Rice cake,3500
+Gimbap Chonguk,Cheese Rice cake Ramen spicy sauce ,4000
+Gimbap Chonguk,Cheese spicy stir-fried Rice cake,4000
+Gimbap Chonguk,Boiled fish paste soup,2500
+Gimbap Chonguk,Japanese thick noodle soup ,3500
+Gimbap Chonguk,Japanese thick noodle seafood,4500
+Gimbap Chonguk,Mixed noodles with spicy red,4500
+Gimbap Chonguk,Dough noodles with vegetables,4500
+Gimbap Chonguk,Chopped noodles,4500
+Gimbap Chonguk,Rice cake soup,4000
+Gimbap Chonguk,Pork dumpling soup,4500
+Gimbap Chonguk,Rice cake and pork dumpling soup,4500
+Gimbap Chonguk,Sticky noodle,4000
+Gimbap Chonguk,Cold noodies in ice water,4000
+Gimbap Chonguk,Spicy buckwheat noodle,4000
+Gimbap Chonguk,Pork dumpling,3500
+Gimbap Chonguk,Kimchi dumpling,3500
+Gimbap Chonguk,Boiled dumpling,3500
+Gimbap Chonguk,Fried dumpling,3500
+Gimbap Chonguk,Mussel porridge,6500
+Gimbap Chonguk,Beef and vegetable porridge,6000
+Gimbap Chonguk,Pumpkin porridge,6000
+Gimbap Chonguk,Pork with Rice (spicy),5000
+Gimbap Chonguk,Marinnated Beef Rice,5500
+Gimbap Chonguk,Squid with Rice (spicy),5500
+Gimbap Chonguk,Stir-fried Rice with veges wrapped with egg,5500
+Gimbap Chonguk,"Mixture of rice, veges, small pieces of beef in metal bowl",4500
+Gimbap Chonguk,Kimchi with rice pork,4500
+Gimbap Chonguk,Shrimp fried rice,5500
+Gimbap Chonguk,Seafood fried rice,5500
+Gimbap Chonguk,Caviar rice in sizzling hot pot,5000
+Gimbap Chonguk,Hot pot Rice,5500
+Gimbap Chonguk,Kimchi soup,5000
+Gimbap Chonguk,Tuna Kimchi soup,5000
+Gimbap Chonguk,Soybeen pastesoup,4500
+Gimbap Chonguk,Soft tofu soup (spicy),4500
+Gimbap Chonguk,Hot pot Bulgogi,6000
+Gimbap Chonguk,Kimchi soup with Blue Cod fish (spicy),6000
+Gimbap Chonguk,Sausages stew,6000
+Gimbap Chonguk,Mixed soup with vegesand beef (spicy),6000
+Gimbap Chonguk,Bone-beef soup with noodles,6000
+Gimbap Chonguk,Beef soup with noodles ,6000
+Gimbap Chonguk,Seafood soup with fish eggs (spicy),6000
+Gimbap Chonguk,Rice topped with chicken,5500
+Gimbap Chonguk,Bowl of Rice,1000
+Gimbap Chonguk,Fried egg,500
+Gimbap Chonguk,Large sized deep-fried pork,5500
+Gimbap Chonguk,Cheese deep-fried pork,6000
+Gimbap Chonguk,Sweet potato deep-fried pork,6000
+BHC Chicken,Bburinkle Chicken,18000
+BHC Chicken,Boneless Bburinkle Chicken,20000
+BHC Chicken,Gold-King Chicken,17000
+BHC Chicken,Boneless Gold-King Chicken,20000
+BHC Chicken,Matcho-King Chicken,18000
+BHC Chicken,Boneless Matcho-King Chicken,20000
+BHC Chicken,Red-King Chicken,19000
+BHC Chicken,Boneless Red-King Chicken,20000
+BHC Chicken,Sunflower Fried Chicken,17000
+BHC Chicken,Boneless Sunflower Fried Chicken,20000
+BHC Chicken,Half Sauce & Half Chicken,18000
+BHC Chicken,Sweet & Sour Sauce Chicken,18000
+BHC Chicken,Bburinkle Combo,20000
+BHC Chicken,Gold-King Combo,20000
+BHC Chicken,Fried Chicken Combo,20000
+BHC Chicken,Matcho-King Combo,20000
+BHC Chicken,Bburinkle Wing,20000
+BHC Chicken,Gold-King Wing,20000
+BHC Chicken,Fried Chicken Wing,20000
+BHC Chicken,Matcho-King Wing,20000
+BHC Chicken,Bburinkle Stick,20000
+BHC Chicken,Gold-King Stick,20000
+BHC Chicken,Fried Chicken Stick,20000
+BHC Chicken,Matcho-King Stick,20000
+BHC Chicken,Sweet and crunchy cheese boul,5000
+BHC Chicken,Sweet red bean twist,5000
+BHC Chicken,Bburing Cheese Boul,6000
+BHC Chicken,Bburing Potatoes,4500
+BHC Chicken,Creem Cheese Twist,5500
+Mom's Touch,Tandoori Thigh Burger,5200
+Mom's Touch,Mala Thigh Burger,5200
+Mom's Touch,Arrabbiata Cheese Burger,7100
+Mom's Touch,Incredible Burger,5700
+Mom's Touch,Shrimp Thigh Flex Burger,7000
+Mom's Touch,Thigh Flex Burger,7700
+Mom's Touch,Thigh Burger,4600
+Mom's Touch,Spicy Thigh Burger,4800
+Mom's Touch,Jalapeno Thigh Burger ,4800
+Mom's Touch,Deep Cheese Thigh Burger,5100
+Mom's Touch,White Garlic Thigh Burger,5200
+Mom's Touch,Unbelievable Burger,5900
+Mom's Touch,White Garlic Burger,4900
+Mom's Touch,Deep Cheese Burger,4800
+Mom's Touch,Fillet Burger,4400
+Mom's Touch,Chili Shrimp Burger ,3800
+Mom's Touch,Shrimp Bulgogi Burger,5700
+Mom's Touch,Deluxe Bulgogi Burger,5200
+Mom's Touch,Bulgogi Burger ,3900
+Mom's Touch,Shrimp Burger,3500
+Mom's Touch,Honey&SoyThigh Boneless Chicken,14500
+Mom's Touch,Garlic Mustard Thigh Boneless Chicken,14500
+Mom's Touch,Hot Cheese Thigh Boneless Chicken,14500
+Mom's Touch,Honey&Soy Chicken with Nurungji ,10900
+Mom's Touch,Garlic Mustard Chicken,10900
+Mom's Touch,Fried Chicken,9400
+Mom's Touch,Sweet&Spicy Korean Fried Chicken,10400
+Mom's Touch,Fried Thigh Boneless Chicken,11900
+Mom's Touch,Sweet&Spicy Korean Fried Thigh Boneless Chicken,13900
+Mom's Touch,Soy Garlic Thigh Boneless Chicken,13900
+Mom's Touch,Soy Garlic Chicken,10400
+Mom's Touch,Cheese Sprinkled Chicken,10400
+Mom's Touch,Sweet Corn Sprinkled Chicken,10400
+Mom's Touch,Half and Half Chicken ,17900
+Mom's Touch,Chipao Thigh Boneless Chicken,13900
+Mom's Touch,Cheese Springled Thigh Boneless Chicken,13900
+Mom's Touch,Sweet Corn Sprinkled Thigh Boneless Chicken,13900
+Mom's Touch,Fried Chicken Leg + Thigh Burger 1 + Cola 1,10600
+Mom's Touch,Fried Chicken Leg + Thigh Burger 2 + Cola 2 + French Fries,16600
+Mom's Touch,Fried Thigh Boneless Chicken + Thigh Burger 1 + Cola 1,16600
+Mom's Touch,Cajun Rice Cake Gangjung,4200
+Mom's Touch,Chipao Rice Cake Gangjung,4400
+Mom's Touch,Soy Garlic Rice Cake Gangjung,4400
+Mom's Touch,Chicken Gangjung Trio,12000
+Mom's Touch,Cajun French Fries,2000
+Mom's Touch,Cheese Sticks ,2000
+Mom's Touch,Jalapeno Nugget,2000
+Mom's Touch,Cheese French Fries,2800
+Mom's Touch,Kimddukman,3500
+Mom's Touch,Popcorn Balls,2600
+Mom's Touch,Crispy Cream Cheese Balls ,2000
+Coffee Dutch & Bean,Americano,2300
+Coffee Dutch & Bean,Cafe Latte,2800
+Coffee Dutch & Bean,Cappuccino,2800
+Coffee Dutch & Bean,Vanilla Latte,3000
+Coffee Dutch & Bean,Caramel Macciato,3300
+Coffee Dutch & Bean,Cafe Mocha,3300
+Coffee Dutch & Bean,Ice Tea,2500
+Coffee Dutch & Bean,Real Chocolate Latte,3300
+Coffee Dutch & Bean,Sweet Potato Latte ,3300
+Coffee Dutch & Bean,Green Tea Latte ,3300
+Coffee Dutch & Bean,Cereal Latte,3300
+Coffee Dutch & Bean,Hot Milk,2000
+Coffee Dutch & Bean,Chrysanthemum tea,3300
+Coffee Dutch & Bean,Earl Grey Tea,3000
+Coffee Dutch & Bean,Citron Tea,3000
+Coffee Dutch & Bean,Tomato Juice,3800
+Coffee Dutch & Bean,Banana Juice ,3800
+Coffee Dutch & Bean,Smoothie,3500
+Coffee Dutch & Bean,Yogurt Smoothie,3800
+Coffee Dutch & Bean,Frappe,4000
+Chansol Book Cafe Library,Americano Hot ,3300
+Chansol Book Cafe Library,Cafe Latte ,3800
+Chansol Book Cafe Library,Americano Ice ,3800
+Chansol Book Cafe Library,Cafe Latte Ice,4300
+Chansol Book Cafe Library,Cappuccino Hot ,3800
+Chansol Book Cafe Library,Cappuccino Ice ,4300
+Chansol Book Cafe Library,Soy Latte Hot ,4300
+Chansol Book Cafe Library,Soy Latte Ice,4800
+Chansol Book Cafe Library,Vanilla Latte Hot,4300
+Chansol Book Cafe Library,Vanilla Latte Ice,4800
+Chansol Book Cafe Library,Hazelnut Latte Hot,4300
+Chansol Book Cafe Library,Hazelnut Latte Ice,4800
+Chansol Book Cafe Library,Cafe Mocha Hot,4300
+Chansol Book Cafe Library,Cafe Mocha Ice,4800
+Chansol Book Cafe Library,Caramel Macciato Hot ,4300
+Chansol Book Cafe Library,Caramel Macciato Ice,4800
+Chansol Book Cafe Library,Espresso ,3300
+Chansol Book Cafe Library,Banana Cafe Ice,4800
+Chansol Book Cafe Library,Jeju Green Tangerine Hot,4300
+Chansol Book Cafe Library,Jeju Green Tangerine Ice,4800
+Chansol Book Cafe Library,Chamomile Hot,4300
+Chansol Book Cafe Library,Chamomile Ice,4800
+Chansol Book Cafe Library,Peppermint Hot,4300
+Chansol Book Cafe Library,Pepperming Ice,4800
