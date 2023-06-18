@@ -67,6 +67,15 @@ const Order = () => {
     setOpen(false);
   };
 
+  const fetchUserOrders = async () => {
+    try {
+      const orders = await getOrdersByUser(token, userId);
+      setUserOrders(orders);
+    } catch (error) {
+      console.error('Error fetching user orders:', error);
+    }
+  };
+
   const handleRatingChange = (event) => {
     setSelectedRating(event.target.value);
   };
@@ -76,6 +85,7 @@ const Order = () => {
     try {
       const data = await updateUserRating(order.delivererId, selectedRating, token);
       console.log(data);
+      await fetchUserOrders();
     } catch (error) {
       console.log(error);
     } finally {
@@ -85,15 +95,6 @@ const Order = () => {
 
 
   useEffect(() => {
-    const fetchUserOrders = async () => {
-      try {
-        const orders = await getOrdersByUser(token, userId);
-        setUserOrders(orders);
-      } catch (error) {
-        console.error('Error fetching user orders:', error);
-      }
-    };
-  
     fetchUserOrders();
   }, [token]);
 

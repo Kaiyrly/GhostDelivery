@@ -34,6 +34,7 @@ If a user wants to deliver an order, they can go to the delivery page. In the "A
 
 ### User Rating
 After an order is complete, users have the ability to rate the deliverer. If a user's rating is lower than 3, they are not allowed to place or take orders.
+Also, you can see your rating in the home page.
 
 ## Conclusion
 This documentation provides an overview of the features available in our web application. Please refer to the specific feature sections for detailed instructions and usage guidelines.

@@ -31,31 +31,34 @@ const DeliveryPage = () => {
     setTab(newValue);
   };
 
-  const handleTakeOrder = (order) => {
-    console.log(userId, order)
+  const fetchOrdersAndRating = async () => {
     try {
-      const data = takeOrder(token, order.id, userId)
-      console.log(data);
+      const allOrders = await getAllOrders(token);
+      const rating = await getUserRating(userId, token); 
+
+      setAvailableOrders(allOrders.filter(order => order.delivererId !== userId).filter(order => order.status === 'PLACED'));
+      setMyOrders(allOrders.filter(order => order.delivererId === userId));
+      setUserRating(rating);
+      console.log(allOrders)
+      setOrders(allOrders);
     } catch(error) {
       console.log(error);
     }
   };
 
+  const handleTakeOrder = async (order) => {
+    console.log(userId, order)
+    try {
+      const data = await takeOrder(token, order.id, userId)
+      console.log(data);
+    } catch(error) {
+      console.log(error);
+    }
+    await fetchOrdersAndRating();
+  };
+
   useEffect(() => {
-    const fetchOrdersAndRating = async () => {
-      try {
-        const allOrders = await getAllOrders(token);
-        const rating = await getUserRating(userId, token); 
-  
-        setAvailableOrders(allOrders.filter(order => order.delivererId !== userId).filter(order => order.status === 'PLACED'));
-        setMyOrders(allOrders.filter(order => order.delivererId === userId));
-        setUserRating(rating);
-        console.log(allOrders)
-        setOrders(allOrders);
-      } catch(error) {
-        console.log(error);
-      }
-    };
+    
   
     fetchOrdersAndRating();
   }, []);
