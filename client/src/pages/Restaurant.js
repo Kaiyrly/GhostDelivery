@@ -7,6 +7,8 @@ import useToken from '../hooks/useToken';
 import { restaurants } from '../constants';
 import { placeOrder, getUserRating } from '../services/api';
 import { getUserIdFromToken } from '../helpers';
+import { useNavigate } from 'react-router-dom';
+
 
 
 const Title = styled(Typography)({
@@ -39,6 +41,8 @@ const Restaurant = () => {
     const [address, setAddress] = useState("");
     const [userRating, setUserRating] = useState(0);
 
+    const navigate = useNavigate();
+
     useEffect(() => {
     const fetchRating = async () => {
         const userId = getUserIdFromToken(token);
@@ -70,6 +74,8 @@ const Restaurant = () => {
         } catch(error) {
             console.log(error);
         }
+
+        navigate("/order");
 
     }
 
