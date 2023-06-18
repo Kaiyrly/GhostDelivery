@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Access](#access)
 - [Features](#features)
   - [Login](#login)
   - [Order/Delivery](#order-delivery)
@@ -9,6 +10,9 @@
 
 ## Introduction
 Welcome to the documentation for our application. This document provides an overview of the features and functionality of our web application.
+
+## Access
+The web app can be accessed from https://localhost:8080 url, not from https://localhost:8080/my-service
 
 ## Features
 
