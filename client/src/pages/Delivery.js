@@ -25,13 +25,14 @@ const DeliveryPage = () => {
   const [availableOrders, setAvailableOrders] = useState([]);
   const [myOrders, setMyOrders] = useState([]);
   const {token, setToken} = useToken();
+  const userId = getUserIdFromToken(token);
 
   const handleTabChange = (event, newValue) => {
     setTab(newValue);
   };
 
   const handleTakeOrder = (order) => {
-    const userId = getUserIdFromToken(token);
+    console.log(userId, order)
     try {
       const data = takeOrder(token, order.id, userId)
       console.log(data);
@@ -42,7 +43,6 @@ const DeliveryPage = () => {
 
   useEffect(() => {
     const fetchOrdersAndRating = async () => {
-      const userId = getUserIdFromToken(token);
       try {
         const allOrders = await getAllOrders(token);
         const rating = await getUserRating(userId, token); 
@@ -78,12 +78,12 @@ const DeliveryPage = () => {
               variant="contained" 
               color="primary" 
               onClick={() => handleTakeOrder(order)}
-              disabled={userRating < 3 || order.userId === getUserIdFromToken(token)}
+              disabled={userRating < 3 || order.userId == userId}
             >
               Take Order
             </Button>
             {userRating < 3 && <Typography variant="body2" color="error">Your rating is too low, you cannot take orders</Typography>}
-            {order.userId === getUserIdFromToken(token) && <Typography variant="body2" color="error">This is your order, you can not take your own order</Typography>}
+            {order.userId == userId && <Typography variant="body2" color="error">This is your order, you can not take your own order</Typography>}
           </CardContent>
         </OrderCard>
       ))}

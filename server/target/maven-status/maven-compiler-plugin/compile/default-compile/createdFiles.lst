@@ -5,6 +5,7 @@ com/milestone2/app/controllers/UserController.class
 com/milestone2/app/filters/JwtRequestFilter.class
 com/milestone2/app/models/AuthenticationResponse.class
 com/milestone2/app/App.class
+com/milestone2/app/controllers/RouteController.class
 com/milestone2/app/models/ChangePasswordRequest.class
 com/milestone2/app/UploadApplication.class
 com/milestone2/app/util/JwtUtil.class
